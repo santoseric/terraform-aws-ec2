@@ -1,0 +1,1 @@
+# Script básico com a finalidade de subir instancias EC2 para testes
