@@ -4,9 +4,9 @@ provider "aws" {
 }
 
 resource "aws_instance" "example" {
-  ami           = "ami-08e637cea2f053dfa"
-  instance_type = "t2.micro"
-  key_name      = "devops"
+  ami           = var.ami
+  instance_type = var.instance_type
+  key_name      = var.key_name
 
   connection {
     type        = "ssh"
